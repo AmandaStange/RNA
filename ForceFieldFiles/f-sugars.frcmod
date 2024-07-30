@@ -1,0 +1,87 @@
+Parmbsc1-derived forcefield for f-furanoses
+MASS
+CF 12.01	 0.878		     Santiago, was CT (2'carbon in 2'F-Arabino)
+CG 12.01         0.878               Santiago, was CT (2'carbon in 2'F-Ribo)
+
+BOND
+CF-CT  310.0    1.526 	    Santiago, was CT-CT
+CF-CE  310.0    1.526	    Santiago, was CE-CT
+CF-H1  340.0    1.090	    Santiago was CT-H1
+CG-CT  310.0    1.526       Santiago, was CT-CT
+CG-H1  340.0    1.090       Santiago was CT-H1
+F -CF  367.0    1.380       Santiago, was F -CT
+F -CG  367.0    1.380       Santiago, was F -CT
+F -CS  367.0    1.380       Santiago, was F -CT
+
+ANGLE
+H1-CE-CF    50.0      109.50    Santiago, was H1-CE-CT
+H1-CT-CG    50.0      109.50    Santiago, was H1-CT-CT 
+CE-CF-H1    50.0      109.50    Santiago, was CE-CT-H1
+CE-CF-CT    40.0      109.50    Santiago, was CE-CT-CT
+CT-CG-CT    40.0      109.50    Santiago, was CT-CT-CT
+CF-CE-OH    50.0      109.50    Santiago, was CT-CE-OH
+CG-CT-OH    50.0      109.50    Santiago, was CT-CT-OH
+CT-CE-CF    40.0      109.50    Santiago, was CT-CE-CT
+CT-CT-CG    40.0      109.50    Santiago, was CT-CT-CT
+CT-CF-H1    50.0      109.50    Santiago, was CT-CT-H1
+CT-CG-H1    50.0      109.50    Santiago, was CT-CT-H1
+CF-CT-H2    50.0      109.50    Santiago, was CT-CT-H2
+CG-CT-H2    50.0      109.50    Santiago, was CT-CT-H2
+CF-CT-N*    50.0      109.50    Santiago, was CT-CT-N*
+CG-CT-N*    50.0      109.50    Santiago, was CT-CT-N*
+CF-CT-OS    50.0      109.50    Santiago, was CT-CT-OS
+CF-CE-OS    50.0      109.50    Santiago, was CT-CT-OS
+CG-CT-OS    50.0      109.50    Santiago, was CT-CT-OS
+F -CF-H1    50.0      109.50    Santiago was F-CT-H1
+F -CG-H1    50.0      109.50    Santiago was F-CT-H1
+F -CF-CT    50.0      109.00    Santiago, was F -CT-CT
+F -CG-CT    50.0      109.00    Santiago, was F -CT-CT
+F -CF-CE    50.0      109.00    Santiago, was F -CT-CT
+F -CF-H2    50.0      109.50    Santiago, was F -CT-H2 
+F -CG-H2    50.0      109.50    Santiago, was F -CT-H2
+F -CS-CS    80.0      125.00    Santiago, was OS-CS-CS
+F -CS-C     80.0      125.00    Santiago, was OS-CS-CS
+
+DIHE
+X -CE-CF-X    9    1.400         0.0             3.0	    Santiago, was X -CE-CT-X
+X -CT-CF-X    9    1.400         0.0             3.0        Santiago, was X -CE-CT-X
+X -CT-CG-X    9    1.400         0.0             3.0        Santiago, was X -CT-CT-X
+CI-CT-CT-CG   1    0.180         0.0            -3.         Santiago, was CI-CT-CT-CT
+CI-CT-CT-CG   1    0.250       180.0            -2.         Santiago, was CI-CT-CT-CT
+CI-CT-CT-CG   1    0.200       180.0             1.         Santiago, was CI-CT-CT-CT
+HO-OH-CT-CG   1    0.16          0.0            -3.         Santiago, was HO-OH-CT-CT 
+HO-OH-CT-CG   1    0.25          0.0             1.         Santiago, was HO-OH-CT-CT
+CF-CT-OS-CT   1    0.383         0.0            -3.         Santiago, was CT-CT-OS-CT                   
+CF-CT-OS-CT   1    0.1         180.0             2.         Santiago, was CT-CT-OS-CT
+CG-CT-OS-CT   1    0.383         0.0            -3.         Santiago, was CT-CT-OS-CT
+CG-CT-OS-CT   1    0.1         180.0             2.         Santiago, was CT-CT-OS-CT
+H1-CF-CT-OS   1    0.000         0.0            -3.         Santiago, was H1-CT-CT-OS
+H1-CF-CT-OS   1    0.25          0.0             1.         Santiago, was H1-CT-CT-OS
+H1-CG-CT-OS   1    0.000         0.0            -3.         Santiago, was H1-CT-CT-OS
+H1-CG-CT-OS   1    0.25          0.0             1.         Santiago, was H1-CT-CT-OS
+H1-CG-CT-OH   1    0.000         0.0            -3.         Santiago, was H1-CT-CT-OH
+H1-CG-CT-OH   1    0.25          0.0             1.         Santiago, was H1-CT-CT-OH
+H1-CE-CF-F    1    0.000         0.0            -3.         Santiago, was H1-CT-CT-F
+H1-CE-CF-F    1    0.19          0.0             1.         Santiago, was H1-CT-CT-F
+H1-CT-CG-F    1    0.000         0.0            -3.         Santiago, was H1-CT-CT-F
+H1-CT-CG-F    1    0.19          0.0             1.         Santiago, was H1-CT-CT-F
+CT-CF-CE-CT   1    0.4112      220.129          -1.0        Santiago, v2 fitted to B3LYP 2'F-arabino puckering
+CT-CF-CE-CT   1    0.9785     -159.1908         -2.0        Santiago, v2 fitted to B3LYP 2'F-arabino puckering
+CT-CF-CE-CT   1    0.9717      186.781          -3.0        Santiago, v2 fitted to B3LYP 2'F-arabino puckering
+CT-CF-CE-CT   1    0.599577     50.94825         4.0        Santiago, v2 fitted to B3LYP 2'F-arabino puckering
+CT-CG-CT-CT   1    0.734       256.4895         -1.0        Santiago, v2 fitted to B3LYP 2'F-ribo puckering
+CT-CG-CT-CT   1    1.079       243.5114         -2.0        Santiago, v2 fitted to B3LYP 2'F-ribo puckering
+CT-CG-CT-CT   1    0.6632     -135.1087         -3.0        Santiago, v2 fitted to B3LYP 2'F-ribo puckering
+CT-CG-CT-CT   1    0.780197     74.079264        4.0        Santiago, v2 fitted to B3LYP 2'F-ribo puckering   
+P -OS-CE-CF   1    1.079933    297.76503        -1.0        Santiago, was P -OS-CE-CT
+P -OS-CE-CF   1    0.319017    200.61045        -2.0        Santiago, was P -OS-CE-CT
+P -OS-CE-CF   1    0.054836    151.62658         3.0        Santiago, was P -OS-CE-CT
+HO-OH-CE-CF   1    1.079933    297.76503        -1.0        Santiago, was HO-OH-CE-CT
+HO-OH-CE-CF   1    0.319017    200.61045        -2.0        Santiago, was HO-OH-CE-CT
+HO-OH-CE-CF   1    0.054836    151.62658         3.0        Santiago, was HO-OH-CE-CT
+
+IMPROPER
+
+NONBON
+  CF	      1.9080  0.1094	         Santiago, was CT
+  CG          1.9080  0.1094             Santiago, was CT

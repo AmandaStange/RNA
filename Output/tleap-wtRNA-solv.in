@@ -1,0 +1,19 @@
+source leaprc.DNA.bsc1          # Load the DNA bsc1 force field
+source leaprc.water.tip4pew     # Load the TIP4PEW water model
+
+# Load the PDB file of your molecule
+mol = loadPdb Output/wtRNA_rename.pdb 
+
+# Solvate the molecule in a box of TIP4PEW water
+solvateBox mol TIP4PEWBOX 10.0
+
+# Add ions to neutralize the system and reach 0.05 M MgCl2 concentration 
+addIonsRand mol MG 10
+addIonsRand mol Cl- 10 
+
+
+# Save the parameter and coordinate files
+saveAmberParm mol Output/wtRNA_solv.prmtop Output/wtRNA_solv.inpcrd
+# Save the solvated PDB file for reference
+savePdb mol Output/wtRNA_solvated.pdb
+quit
