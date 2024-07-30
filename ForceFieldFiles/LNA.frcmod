@@ -1,0 +1,65 @@
+Frcmod file for LNA residues
+MASS
+C7 12.01 0.360 LNA Purine
+C8 12.01 0.360 LNA Pyrimidine
+
+BOND
+C7-H5 367.0 1.080
+C7-N* 440.0 1.371
+C7-NB 529.0 1.304
+C8-CM 549.0 1.350
+C8-H4 367.0 1.080
+C8-N* 448.0 1.365
+
+ANGLE
+H5-C7-N* 50.0 123.05
+H5-C7-NB 50.0 123.05
+N*-C7-NB 70.0 113.90
+CB-N*-C7 70.0 105.40
+CT-N*-C7 70.0 128.80
+CB-NB-C7 70.0 103.80
+CA-CM-C8 63.0 117.00
+C -CM-C8 63.0 120.70
+HA-CM-C8 50.0 119.70
+CT-N*-C8 70.0 121.20
+C -N*-C8 70.0 121.60
+CM-C8-H4 50.0 119.70
+CM-C8-N* 70.0 121.20
+H4-C8-N* 50.0 119.10
+
+DIHE
+X -C7-N*-X 4 6.80 180.0 2.
+X -C7-NB-X 2 20.00 180.0 2.
+X -C8-CM-X 4 26.60 180.0 2.
+X -C8-N*-X 4 7.40 180.0 2.
+C8-CM-C -O 1 2.175 180.0 -2. Junmei et al, 1999
+C8-CM-C -O 1 0.30 0.0 3. Junmei et al, 1999
+OS-CT-N*-C7 1 0.238361 0.0 -4. LNA Purine
+OS-CT-N*-C7 1 1.73368 180.0 -3. LNA Purine
+OS-CT-N*-C7 1 1.06497 0.0 -2. LNA Purine
+OS-CT-N*-C7 1 1.75141 0.0 1. LNA Purine
+CT-CT-N*-C7 1 0.165055 0.0 -4. LNA Purine
+CT-CT-N*-C7 1 1.13323 0.0 -3. LNA Purine
+CT-CT-N*-C7 1 0.624584 0.0 -2. LNA Purine
+CT-CT-N*-C7 1 0.4216 0.0 1. LNA Purine
+OS-CT-N*-C8 1 0.138464 0.0 -4. LNA Pyrimidine
+OS-CT-N*-C8 1 2.78597 180.0 -3. LNA Pyrimidine
+OS-CT-N*-C8 1 1.15517 0.0 -2. LNA Pyrimidine
+OS-CT-N*-C8 1 0.815398 0.0 1. LNA Pyrimidine
+CT-CT-N*-C8 1 0.128426 180.0 -4. LNA Pyrimidine
+CT-CT-N*-C8 1 2.02548 0.0 -3. LNA Pyrimidine
+CT-CT-N*-C8 1 0.104606 0.0 -2. LNA Pyrimidine
+CT-CT-N*-C8 1 0.592887 0.0 1. LNA Pyrimidine
+P -OS-CE-CT   1    1.079933    297.76503        -1.0        Santiago, was P -OS-CE-CT
+P -OS-CE-CT   1    0.319017    200.61045        -2.0        Santiago, was P -OS-CE-CT
+P -OS-CE-CT   1    0.054836    151.62658         3.0        Santiago, was P -OS-CE-CT 
+
+IMPROPER
+X -X -C7-H5         1.1          180.          2.
+X -X -C8-H4         1.1          180.          2.
+CB-C7-N*-CT         1.0          180.          2.
+C -C8-N*-CT         1.0          180.          2.
+
+NONBON
+  C7 1.9080 0.0860
+  C8 1.9080 0.0860
