@@ -12,7 +12,7 @@ gmx mdrun -deffnm min -v
 
 # Run equilibration
 gmx grompp -f ../../../ForceFieldFiles/mdps/step4.1_equilibration.mdp -r min.gro -c min.gro -p topol.top -n index.ndx -o eq.tpr -maxwarn 1
-gmx mdrun -deffnm eq -v -nsteps 100
+gmx mdrun -deffnm eq -v
 
 # Prepare input files for production runs
 for i in {1..4}; do
