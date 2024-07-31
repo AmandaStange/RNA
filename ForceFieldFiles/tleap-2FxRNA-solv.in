@@ -4,11 +4,13 @@ source leaprc.water.tip4pew     # Load the TIP4PEW water model
 loadoff ForceFieldFiles/parmBSC1.lib            # Load the parmBSC1 library file
 loadAmberParams ForceFieldFiles/parmBSC1.frcmod # Load the parmBSC1 frcmod file
 
-loadAmberParams ForceFieldFiles/LNA.frcmod # Load your custom frcmod file
-loadoff ForceFieldFiles/LNA.lib            # Load your custom library file
+loadoff ForceFieldFiles/f-sugars.lib            # Load your custom library file
+loadAmberParams ForceFieldFiles/f-sugars.frcmod # Load your custom frcmod file
+
 
 # Load the PDB file of your molecule
 mol = loadPdb Output/x/xRNA_rename.pdb 
+
 
 # Solvate the molecule in a box of TIP4PEW water
 solvateBox mol TIP4PEWBOX 10.0
@@ -23,3 +25,4 @@ saveAmberParm mol Output/x/xRNA_solv.prmtop Output/x/xRNA_solv.inpcrd
 # Save the solvated PDB file for reference
 savePdb mol Output/x/xRNA_solvated.pdb
 quit
+

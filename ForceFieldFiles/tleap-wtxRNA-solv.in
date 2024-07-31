@@ -1,8 +1,12 @@
 source leaprc.DNA.bsc1          # Load the DNA bsc1 force field
 source leaprc.water.tip4pew     # Load the TIP4PEW water model
 
+
+loadoff ForceFieldFiles/parmBSC1.lib            # Load the parmBSC1 library file
+loadAmberParams ForceFieldFiles/parmBSC1.frcmod # Load the parmBSC1 frcmod file
+
 # Load the PDB file of your molecule
-mol = loadPdb Output/xRNA_rename.pdb 
+mol = loadPdb Output/x/xRNA_rename.pdb 
 
 # Solvate the molecule in a box of TIP4PEW water
 solvateBox mol TIP4PEWBOX 10.0
@@ -13,7 +17,7 @@ addIonsRand mol Cl- 10
 
 
 # Save the parameter and coordinate files
-saveAmberParm mol Output/xRNA_solv.prmtop Output/xRNA_solv.inpcrd
+saveAmberParm mol Output/x/xRNA_solv.prmtop Output/x/xRNA_solv.inpcrd
 # Save the solvated PDB file for reference
-savePdb mol Output/xRNA_solvated.pdb
+savePdb mol Output/x/xRNA_solvated.pdb
 quit

@@ -1,0 +1,45 @@
+============================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2023.10.27 (c) 2024 AWSdS |
+============================================================================
+DEBUG: CLI: -p Output/wtRNA_solv.prmtop -x Output/wtRNA_solv.inpcrd -b Output/
+DEBUG: Python Version 3.12.4 | packaged by conda-forge | (main, Jun 17 2024, 10:23:07) [GCC 12.3.0]
+Converting Amber input files to Gromacs ...
+DEBUG: prmtop and inpcrd files loaded
+DEBUG: basename defined = 'Output/'
+DEBUG: getCoords done
+DEBUG: getABCOEFs done
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: atom name 'Cl-' HAS to be all UPPERCASE... Applying this here.
+DEBUG: charge to be balanced: total -3.9999967337
+DEBUG: balanceCharges done
+DEBUG: Balanced TotalCharge -4.0000000000
+DEBUG: PBC = [[53.761862, 47.365862, 50.246862], [90.0, 90.0, 90.0]]
+DEBUG: getAtoms done
+DEBUG: getBonds done
+DEBUG: getAngles done
+DEBUG: getDihedrals done
+==> Writing GROMACS files
+
+==> Disambiguating lower and uppercase atomtypes in GMX top file, even if identical.
+
+DEBUG: writing GRO file
+ERROR: ACPYPE FAILED: [Errno 2] No such file or directory: '/home/au555720/RNA/github/RNA/Output/.amb2gmx/Output/_GMX.gro'
+Traceback (most recent call last):
+  File "/home/au555720/micromamba/envs/AmberTools23/lib/python3.12/site-packages/acpype/cli.py", line 99, in init_main
+    molecule.writeGromacsTopolFiles()
+  File "/home/au555720/micromamba/envs/AmberTools23/lib/python3.12/site-packages/acpype/topol.py", line 1874, in writeGromacsTopolFiles
+    self.writeGroFile()
+  File "/home/au555720/micromamba/envs/AmberTools23/lib/python3.12/site-packages/acpype/topol.py", line 2743, in writeGroFile
+    groFile = open(groFileName, "w")
+              ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/au555720/RNA/github/RNA/Output/.amb2gmx/Output/_GMX.gro'
+Total time of execution: less than a second
+DEBUG: No tmp folder left to be removed
