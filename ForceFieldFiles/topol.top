@@ -1,0 +1,15 @@
+#include "toppar/ff.itp"
+#include "toppar/xRNA.itp"
+#ifdef POSRES
+#include "RNA_posres.itp
+#endif
+#include "toppar/mg.itp"
+#include "toppar/cl.itp"
+#include "toppar/T4E.itp"
+
+[ system ]
+xRNA in water
+
+[ molecules ]
+; Compound        nmols
+ xRNA            1     
