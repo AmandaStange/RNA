@@ -5,25 +5,26 @@ This repository contains scripts for preparing and processing RNA structures usi
 
 ## Scripts Overview
 
-### 1. `amber_tools.sh`
+
+### 1. `prepare_files.sh`
+
+This script performs the following tasks:
+- Runs a Python script to rename files for the given system.
+- Removes CONECT records from the PDB file.
+
+### 2. `rename.py`
+
+This Python script processes the PDB file for the given system:
+- Modifies base names based on specific conditions.
+- Formats the PDB lines and writes the modified PDB file to the Output directory.
+
+### 3. `amber_tools.sh`
 
 This script performs the following tasks:
 - Copies the tleap input file for the given system to the Output directory.
 - Modifies the copied tleap input file to replace placeholders with actual system names.
 - Runs tleap to generate the topology and coordinate files.
 - Uses acpype to convert Amber files to GROMACS files.
-
-### 2. `prepare_files.sh`
-
-This script performs the following tasks:
-- Runs a Python script to rename files for the given system.
-- Removes CONECT records from the PDB file.
-
-### 3. `rename.py`
-
-This Python script processes the PDB file for the given system:
-- Modifies base names based on specific conditions.
-- Formats the PDB lines and writes the modified PDB file to the Output directory.
 
 ### 4. `prepare_gromacs.sh`
 
@@ -51,10 +52,7 @@ This script runs the following GROMACS commands:
 
 ## Requirements
 
-- GROMACS
-- AmberTools
+- GROMACS 2024.0
+- AmberTools23 (python package)
 - Python 3
 
-## License
-
-This project is licensed under the MIT License.
