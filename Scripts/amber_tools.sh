@@ -4,19 +4,6 @@
 system=$1
 
 
-#for i in $(ls Output/); do last="${i: -1}"; if [[ $last == 'A' ]]; then echo "$last, LNA"; elif [[ $last == 'H' ]]; then echo "$last wt"; elif [[ $last == 'F' ]]; then echo "$last F"; fi; done
-
-# Copy the tleap input file for the given system to the Output directory
-
-# last="${system: -1}"
-# if [[ $last == 'A' ]]; then 
-#     cp ForceFieldFiles/tleap-LNAxRNA-solv.in Output/${system}/tleap-${system}-solv.in
-# elif [[ $last == 'H' ]]; then 
-#     cp ForceFieldFiles/tleap-wtxRNA-solv.in Output/${system}/tleap-${system}-solv.in
-# elif [[ $last == 'F' ]] || [[ $system == *"Fy"* ]]; then 
-#     cp ForceFieldFiles/tleap-2FxRNA-solv.in Output/${system}/tleap-${system}-solv.in
-# fi
-
 cp ForceFieldFiles/tleap-xRNA.in Output/${system}/tleap-${system}-solv.in
 
 # Modify the copied tleap input file to replace placeholders with actual system names
@@ -30,7 +17,7 @@ tleap -f Output/${system}/tleap-${system}-solv.in
 cd Output/${system}/
 
 # Use acpype to convert Amber files to GROMACS files
-acpype -p ${system}_solv.prmtop -x ${system}_solv.inpcrd 
+acpype -p ${system}_solv.prmtop -x ${system}_solv.inpcrd
 
 # Return to the original directory
 cd ../../

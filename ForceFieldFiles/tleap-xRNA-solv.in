@@ -8,9 +8,6 @@ loadAmberParams ForceFieldFiles/parmBSC1.frcmod # Load the parmBSC1 frcmod file
 loadoff ForceFieldFiles/f-sugars.lib            # Load your custom library file
 loadAmberParams ForceFieldFiles/f-sugars.frcmod # Load your custom frcmod file
 
-loadAmberParams ForceFieldFiles/LNA.frcmod # Load your custom frcmod file
-loadoff ForceFieldFiles/LNA.lib            # Load your custom library file
-
 # Load the PDB file of your molecule
 mol = loadPdb Output/x/x_rename.pdb 
 
