@@ -7,4 +7,4 @@ system=$1
 python Scripts/rename.py $system
 
 # Remove CONECT records from the PDB file
-sed -i '/CONECT/d' Output/${system}/${system}RNA_rename.pdb
+sed -i '/CONECT/d' Output/${system}/${system}_rename.pdb

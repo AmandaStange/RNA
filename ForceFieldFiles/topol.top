@@ -1,5 +1,5 @@
 #include "toppar/ff.itp"
-#include "toppar/xRNA.itp"
+#include "toppar/x.itp"
 #ifdef POSRES
 #include "RNA_posres.itp
 #endif
@@ -8,8 +8,8 @@
 #include "toppar/T4E.itp"
 
 [ system ]
-xRNA in water
+x in water
 
 [ molecules ]
 ; Compound        nmols
- xRNA            1     
+ x            1     

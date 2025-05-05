@@ -8,7 +8,7 @@ loadAmberParams ForceFieldFiles/LNA.frcmod # Load your custom frcmod file
 loadoff ForceFieldFiles/LNA.lib            # Load your custom library file
 
 # Load the PDB file of your molecule
-mol = loadPdb Output/x/xRNA_rename.pdb 
+mol = loadPdb Output/x/x_rename.pdb 
 
 # Solvate the molecule in a box of TIP4PEW water
 solvateBox mol TIP4PEWBOX 10.0
@@ -19,7 +19,7 @@ addIonsRand mol Cl- 10
 
 
 # Save the parameter and coordinate files
-saveAmberParm mol Output/x/xRNA_solv.prmtop Output/x/xRNA_solv.inpcrd
+saveAmberParm mol Output/x/x_solv.prmtop Output/x/x_solv.inpcrd
 # Save the solvated PDB file for reference
-savePdb mol Output/x/xRNA_solvated.pdb
+savePdb mol Output/x/x_solvated.pdb
 quit
