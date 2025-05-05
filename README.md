@@ -46,7 +46,7 @@ This script runs the following GROMACS commands:
 1. Ensure all required files and directories are in place.
 2. Run the main script `dsRNA.sh` to execute the entire workflow:
    ```bash
-   ./dsRNA.sh
+   ./run.sh
    ```
 3. The output will be generated in the `Output` directory.
 
@@ -59,4 +59,3 @@ This script runs the following GROMACS commands:
 ## References
 - FF parameters for the fluorinated nucleic acids: El-Khoury, Roberto, et al. "Formation of left-handed helices by C2′-fluorinated nucleic acids under physiological salt conditions." Nucleic Acids Research (2024).
 
-- FF parameters for the LNA modifications: Ilyas, Yildirim, and Kierzek Ryszard. "Optimization of an AMBER Force Field for the Artificial Nucleic Acid, LNA, and Benchmarking with NMR of L (CAAU)." (2014).
