@@ -38,3 +38,4 @@ for system in wt 2F 2Fy LNA; do
     echo "End time: $(print_time)"
     echo
 done
+
