@@ -8,7 +8,8 @@ print_time() {
 }
 
 
-for system in $(cat $1); do
+for f in $(ls Structures/); do
+    system=${f%%.*}
     mkdir -p Output/$system
     rm -r Output/$system/*
 
@@ -36,12 +37,11 @@ for system in $(cat $1); do
     # Run run_gromacs.sh
     echo "Running run_gromacs.sh for $system"
     echo "Start time: $(print_time)"
-    bash Scripts/run_gromacs_gromppEQ.sh $system
+    bash Scripts/run_gromacs.sh $system
     echo "End time: $(print_time)"
     echo
 
-    #if [ -f Output/$system/${system}_solv.amb2gmx/${system}_500ns_1.tpr ]; then
-    if [ -f Output/$system/${system}_solv.amb2gmx/eq2.tpr ]; then
+    if [ -f Output/$system/${system}_solv.amb2gmx/${system}_500ns_1.tpr ]; then
         echo "SUCCESS: $system"
     else
         echo "FAILURE: $system"
