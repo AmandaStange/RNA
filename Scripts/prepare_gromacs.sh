@@ -3,8 +3,21 @@
 # Retrieve the system argument
 system=$1
 
+
+
 # Change to the appropriate directory
 cd Output/${system}/${system}_solv.amb2gmx/
+
+# Copy the relevant force field files
+#cp -r ../../../ForceFieldFiles/toppar_$system/ toppar/
+# last="${system: -1}"
+# if [[ $last == 'A' ]]; then 
+#     cp -r ../../../ForceFieldFiles/toppar_LNA/ toppar/
+# elif [[ $last == 'H' ]]; then 
+#     cp -r ../../../ForceFieldFiles/toppar_wt/ toppar/
+# elif [[ $last == 'F' ]]; then 
+#     cp -r ../../../ForceFieldFiles/toppar_2F/ toppar/
+# fi
 
 if [[ $system == *"F"* ]]; then
     cp -r ../../../ForceFieldFiles/toppar_2F/ toppar/

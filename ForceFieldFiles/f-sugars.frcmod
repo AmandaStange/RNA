@@ -1,4 +1,12 @@
-PLACEHOLDER FILE
+Placeholder frcmod file for non-fluorinated demo systems.
+MASS
 
-Actual parameters can be acquired by contacting the authors of:
-FF parameters for the fluorinated nucleic acids: El-Khoury, Roberto, et al. "Formation of left-handed helices by C2′-fluorinated nucleic acids under physiological salt conditions." Nucleic Acids Research (2024).
+BOND
+
+ANGLE
+
+DIHE
+
+IMPROPER
+
+NONBON

@@ -1,6 +1,6 @@
 #!/bin/bash
 source ~/micromamba/etc/profile.d/micromamba.sh
-micromamba activate AmberTools23
+micromamba activate rna
 
 # Function to print current date and time
 print_time() {
@@ -8,8 +8,7 @@ print_time() {
 }
 
 
-for f in $(ls Structures/); do
-    system=${f%%.*}
+for system in exampleRNA-OH; do
     mkdir -p Output/$system
     rm -r Output/$system/*
 

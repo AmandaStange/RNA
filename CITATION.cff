@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+title: "RNA"
+message: "If you use this software, please cite both the software repository and the associated preprint."
+type: software
+authors:
+  - family-names: "Stange"
+    given-names: "Amanda Dyrholm"
+    orcid: "https://orcid.org/0000-0001-9090-211X"
+repository-code: "https://github.com/AmandaStange/RNA"
+license: "MIT"
+abstract: >
+  A workflow for preparing fluorinated RNA origami systems for molecular
+  dynamics simulations using AmberTools, ACPYPE, and GROMACS.
+keywords:
+  - RNA origami
+  - molecular dynamics
+  - GROMACS
+  - AmberTools
+  - ACPYPE
+  - fluorinated RNA
+  - nucleic acids
+  - simulation workflow
+preferred-citation:
+  type: article
+  title: "Fluorinated RNA origami enables serum-stable nanodevices for sensing and targeting"
+  authors:
+    - family-names: "Kristoffersen"
+      given-names: "Emil Laust"
+    - family-names: "Zwergius"
+      given-names: "Nikolaj Holck"
+    - family-names: "Vallina"
+      given-names: "Nestor Sampedro"
+    - family-names: "Stange"
+      given-names: "Amanda Dyrholm"
+      orcid: "https://orcid.org/0000-0001-9090-211X"
+    - family-names: "Desdorf"
+      given-names: "Lasse Messell"
+    - family-names: "Thomsen"
+      given-names: "Sofie"
+    - family-names: "Birkedal"
+      given-names: "Victoria"
+    - family-names: "Glück"
+      given-names: "Nicolas"
+    - family-names: "Civit"
+      given-names: "Laia"
+    - family-names: "Geary"
+      given-names: "Cody"
+    - family-names: "Kjems"
+      given-names: "Jørgen"
+    - family-names: "Valero"
+      given-names: "Julian"
+    - family-names: "Andersen"
+      given-names: "Ebbe Sloth"
+  journal: "bioRxiv"
+  year: 2026
+  doi: "10.64898/2026.03.04.709525"
+  url: "https://doi.org/10.64898/2026.03.04.709525"
