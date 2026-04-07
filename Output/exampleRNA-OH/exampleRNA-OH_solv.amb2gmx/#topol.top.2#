@@ -1,0 +1,16 @@
+#include "toppar/ff.itp"
+#include "toppar/exampleRNA-OH.itp"
+#ifdef POSRES
+#include "RNA_posres.itp
+#endif
+#include "toppar/mg.itp"
+#include "toppar/cl.itp"
+#include "toppar/T4E.itp"
+
+[ system ]
+exampleRNA-OH in water
+
+[ molecules ]
+; Compound        nmols
+ exampleRNA-OH            1     
+SOL              4645

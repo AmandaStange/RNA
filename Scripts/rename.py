@@ -37,6 +37,11 @@ with open(f'Structures/{system}.pdb', 'r') as f:
                         base += '5'
                     if resid in [64]:
                         base += '3'
+                elif motif == 'ex':
+                    if resid in [49]:
+                        base += '5'
+                    if resid in [64]:
+                        base += '3'
                 elif motif == 'co':
                     if 'long' in system or "J" in system:
                         if resid in [190,220,110,137]:
@@ -84,7 +89,7 @@ with open(f'Structures/{system}.pdb', 'r') as f:
                 if 'F' in base and atom == "H2'":
                     atom = "H2''"
                     print(base, atom)
-                
+
                 if base == 'NMA':
                     base = 'NME'
 
@@ -95,7 +100,7 @@ with open(f'Structures/{system}.pdb', 'r') as f:
                 # if base in ['ACE', 'NME'] and atom[:2] in ['1H', '2H', '3H']:
                 #     atom = f'HH3{atom[0]}'
 
-                
+
 
                 if base in amino :
                     new_file += f'ATOM  {l[1]:>5} {atom:<4} {base:<3} {l[4]}{resid:>4}    {l[6]:<8}{l[7]:<8}{l[8]:<8}{l[9]:>6}{l[10]:>6}           {l[11]}\n'

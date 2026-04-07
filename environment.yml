@@ -1,0 +1,11 @@
+name: rna
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - ambertools=23
+  - pip
+  - pip:
+      - acpype

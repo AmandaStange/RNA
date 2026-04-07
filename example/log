@@ -1,0 +1,564 @@
+Running prepare_files.sh for exampleRNA-OH
+Start time: 2026-04-07 09:35:52
+End time: 2026-04-07 09:35:52
+
+Running amber_tools.sh for exampleRNA-OH
+Start time: 2026-04-07 09:35:52
+-I: Adding /home/au555720/micromamba/envs/rna/dat/leap/prep to search path.
+-I: Adding /home/au555720/micromamba/envs/rna/dat/leap/lib to search path.
+-I: Adding /home/au555720/micromamba/envs/rna/dat/leap/parm to search path.
+-I: Adding /home/au555720/micromamba/envs/rna/dat/leap/cmd to search path.
+-f: Source Output/exampleRNA-OH/tleap-exampleRNA-OH-solv.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./Output/exampleRNA-OH/tleap-exampleRNA-OH-solv.in
+----- Source: /home/au555720/micromamba/envs/rna/dat/leap/cmd/leaprc.protein.ff19SB
+----- Source of /home/au555720/micromamba/envs/rna/dat/leap/cmd/leaprc.protein.ff19SB done
+Log file: ./leap.log
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/parm19.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA + ff19SB
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/frcmod.ff19SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff19SB AA-specific backbone CMAPs for protein 07/25/2019
+Loading library: /home/au555720/micromamba/envs/rna/dat/leap/lib/amino19.lib
+Loading library: /home/au555720/micromamba/envs/rna/dat/leap/lib/aminoct12.lib
+Loading library: /home/au555720/micromamba/envs/rna/dat/leap/lib/aminont12.lib
+----- Source: /home/au555720/micromamba/envs/rna/dat/leap/cmd/leaprc.DNA.bsc1
+----- Source of /home/au555720/micromamba/envs/rna/dat/leap/cmd/leaprc.DNA.bsc1 done
+Log file: ./leap.log
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading library: /home/au555720/micromamba/envs/rna/dat/leap/lib/parmBSC1.lib
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/frcmod.parmbsc1
+Reading force field modification type file (frcmod)
+Reading title:
+Parmbsc1 force-field for DNA
+----- Source: /home/au555720/micromamba/envs/rna/dat/leap/cmd/leaprc.water.tip4pew
+----- Source of /home/au555720/micromamba/envs/rna/dat/leap/cmd/leaprc.water.tip4pew done
+Loading library: /home/au555720/micromamba/envs/rna/dat/leap/lib/atomic_ions.lib
+Loading library: /home/au555720/micromamba/envs/rna/dat/leap/lib/solvents.lib
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/frcmod.tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP4PEW
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/frcmod.ionsjc_tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP4P/EW water from Joung & Cheatham JPCB (2008)
+Loading parameters: /home/au555720/micromamba/envs/rna/dat/leap/parm/frcmod.ions234lm_126_tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP4P/EW water model (12-6 normal usage set)
+Loading library: ./ForceFieldFiles/parmBSC1.lib
+Loading parameters: ./ForceFieldFiles/parmBSC1.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Parmbsc1 force-field for DNA
+Loading library: ./ForceFieldFiles/f-sugars.lib
+Loading parameters: ./ForceFieldFiles/f-sugars.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Parmbsc1-derived forcefield for f-furanoses
+Loading PDB file: ./Output/exampleRNA-OH/exampleRNA-OH_rename.pdb
+  total atoms in file: 510
+  Solute vdw bounding box:              28.220 27.800 28.808
+  Total bounding box for atom centers:  48.220 47.800 48.808
+  Solvent unit box:                     18.860 18.867 18.860
+  Total vdw box size:                   51.450 51.120 52.162 angstroms.
+  Volume: 137191.427 A^3 
+  Total mass 62366.928 amu,  Density 0.755 g/cc
+  Added 3181 residues.
+Adding 10 counter ions to "mol". 3171 solvent molecules will remain.
+0: Placed MG in mol at (12.12, 13.61, -18.68).
+0: Placed MG in mol at (23.90, -6.25, -14.11).
+0: Placed MG in mol at (-12.03, 1.81, -17.57).
+0: Placed MG in mol at (-0.13, 10.33, 9.60).
+0: Placed MG in mol at (16.27, -2.02, 19.84).
+0: Placed MG in mol at (-16.54, 6.83, -5.70).
+0: Placed MG in mol at (-22.79, -18.59, 18.61).
+0: Placed MG in mol at (1.44, 21.71, -3.16).
+0: Placed MG in mol at (2.06, 18.92, 1.33).
+0: Placed MG in mol at (18.89, 11.32, -23.58).
+Adding 10 counter ions to "mol". 3161 solvent molecules will remain.
+0: Placed Cl- in mol at (17.86, 19.39, 16.05).
+0: Placed Cl- in mol at (-3.59, -7.70, -8.98).
+0: Placed Cl- in mol at (16.03, -2.61, 13.67).
+0: Placed Cl- in mol at (-22.32, -11.80, 0.66).
+0: Placed Cl- in mol at (10.44, -7.78, 19.78).
+0: Placed Cl- in mol at (-15.42, -17.01, 8.55).
+0: Placed Cl- in mol at (8.31, -21.10, -20.93).
+0: Placed Cl- in mol at (-21.74, 11.05, 12.63).
+0: Placed Cl- in mol at (22.81, -11.25, -22.52).
+0: Placed Cl- in mol at (17.09, 21.30, 13.96).
+Checking Unit.
+
+/home/au555720/micromamba/envs/rna/bin/teLeap: Warning!
+The unperturbed charge of the unit (-5.000000) is not zero.
+
+/home/au555720/micromamba/envs/rna/bin/teLeap: Note.
+Ignoring the warnings from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 108 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+ (no restraints)
+Writing pdb file: Output/exampleRNA-OH/exampleRNA-OH_solvated.pdb
+   printing CRYST1 record to PDB file with box info
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 1; Notes = 1.
+============================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2023.10.27 (c) 2026 AWSdS |
+============================================================================
+Converting Amber input files to Gromacs ...
+==> Writing GROMACS files
+
+==> Disambiguating lower and uppercase atomtypes in GMX top file, even if identical.
+
+==> Writing GMX dihedrals for GMX 4.5 and higher.
+
+Total time of execution: less than a second
+End time: 2026-04-07 09:36:03
+
+Running prepare_gromacs.sh for exampleRNA-OH
+Start time: 2026-04-07 09:36:03
+Note that major changes are planned in future for editconf, to improve usability and utility.
+Read 510 atoms
+Volume: 137.192 nm^3, corresponds to roughly 61700 electrons
+No velocities found
+    system size :  2.556  2.466  2.576 (nm)
+    diameter    :  3.477               (nm)
+    center      :  2.520  2.633  2.607 (nm)
+    box vectors :  5.145  5.112  5.216 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  : 137.19               (nm^3)
+    shift       :  1.888  1.775 -0.530 (nm)
+new center      :  4.408  4.408  2.078 (nm)
+new box vectors :  5.877  5.877  5.877 (nm)
+new box angles  :  60.00  60.00  90.00 (degrees)
+new box volume  : 143.53               (nm^3)
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. (1964)
+DOI: 10.1021/j100785a001
+-------- -------- --- Thank You --- -------- --------
+
+Adding line for 4645 solvent molecules with resname (SOL) to topology file (topol.top)
+Setting the LD random seed to -269541687
+
+Generated 1326 of the 1326 non-bonded parameter combinations
+
+Generated 1326 of the 1326 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'exampleRNA-OH'
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmueller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. (2014)
+DOI: 10.1021/ct400626b
+-------- -------- --- Thank You --- -------- --------
+
+
+atom name 511 in topol.top and exampleRNA-OH_solv.gro does not match (O - OW)
+
+atom name 512 in topol.top and exampleRNA-OH_solv.gro does not match (H1 - HW1)
+
+atom name 513 in topol.top and exampleRNA-OH_solv.gro does not match (H2 - HW2)
+
+atom name 514 in topol.top and exampleRNA-OH_solv.gro does not match (EPW - MW)
+
+atom name 515 in topol.top and exampleRNA-OH_solv.gro does not match (O - OW)
+
+atom name 516 in topol.top and exampleRNA-OH_solv.gro does not match (H1 - HW1)
+
+atom name 517 in topol.top and exampleRNA-OH_solv.gro does not match (H2 - HW2)
+
+atom name 518 in topol.top and exampleRNA-OH_solv.gro does not match (EPW - MW)
+
+atom name 519 in topol.top and exampleRNA-OH_solv.gro does not match (O - OW)
+
+atom name 520 in topol.top and exampleRNA-OH_solv.gro does not match (H1 - HW1)
+
+atom name 521 in topol.top and exampleRNA-OH_solv.gro does not match (H2 - HW2)
+
+atom name 522 in topol.top and exampleRNA-OH_solv.gro does not match (EPW - MW)
+
+atom name 523 in topol.top and exampleRNA-OH_solv.gro does not match (O - OW)
+
+atom name 524 in topol.top and exampleRNA-OH_solv.gro does not match (H1 - HW1)
+
+atom name 525 in topol.top and exampleRNA-OH_solv.gro does not match (H2 - HW2)
+
+atom name 526 in topol.top and exampleRNA-OH_solv.gro does not match (EPW - MW)
+
+atom name 527 in topol.top and exampleRNA-OH_solv.gro does not match (O - OW)
+
+atom name 528 in topol.top and exampleRNA-OH_solv.gro does not match (H1 - HW1)
+
+atom name 529 in topol.top and exampleRNA-OH_solv.gro does not match (H2 - HW2)
+
+atom name 530 in topol.top and exampleRNA-OH_solv.gro does not match (EPW - MW)
+
+(more than 20 non-matching atom names)
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:     2      Other residues
+There are:    14        RNA residues
+There are:  4645      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between excluded atoms is 0.394 nm between atom 192 and 199
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 52x52x52, spacing 0.113 0.113 0.113
+
+Estimate for the relative computational load of the PME mesh part: 0.20
+
+This run will generate roughly 13 Mb of data
+Will try to add 12 Mg2+ ions and 9 CL- ions.
+Select a continuous group of solvent molecules
+Selected 5: 'SOL'
+
+Processing topology
+Replacing 21 solute molecules in topology file (topol.top)  by 12 Mg2+ and 9 CL- ions.
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:    14      Other residues
+There are:    14        RNA residues
+There are:  4624      Water residues
+There are:     9        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+  0 System              : 19027 atoms
+  1 Other               :    74 atoms
+  2 A5                  :    31 atoms
+  3 U3                  :    31 atoms
+  4 Mg2+                :    12 atoms
+  5 CL-                 :     9 atoms
+  6 Water               : 18496 atoms
+  7 SOL                 : 18496 atoms
+  8 non-Water           :   531 atoms
+  9 Ion                 :     9 atoms
+ 10 Water_and_ions      : 18505 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+Removed group 0 'System'
+Removed group 1 'Other'
+Removed group 2 'A5'
+Removed group 3 'U3'
+Removed group 4 'Mg2+'
+Removed group 5 'CL-'
+Removed group 6 'Water'
+Removed group 7 'SOL'
+Removed group 8 'non-Water'
+Removed group 9 'Ion'
+Removed group 10 'Water_and_ions'
+Group 11 does not exist
+Group 12 does not exist
+Group 13 does not exist
+Group 14 does not exist
+Group 15 does not exist
+Group 16 does not exist
+Group 17 does not exist
+Group 18 does not exist
+Group 19 does not exist
+Group 20 does not exist
+Group 21 does not exist
+Group 22 does not exist
+Group 23 does not exist
+Group 24 does not exist
+Group 25 does not exist
+Group 26 does not exist
+Group 27 does not exist
+Group 28 does not exist
+Group 29 does not exist
+Group 30 does not exist
+Group 31 does not exist
+Group 32 does not exist
+Group 33 does not exist
+Group 34 does not exist
+Group 35 does not exist
+Group 36 does not exist
+Group 37 does not exist
+Group 38 does not exist
+Group 39 does not exist
+Group 40 does not exist
+Group 41 does not exist
+Group 42 does not exist
+Group 43 does not exist
+Group 44 does not exist
+Group 45 does not exist
+Group 46 does not exist
+Group 47 does not exist
+Group 48 does not exist
+Group 49 does not exist
+Group 50 does not exist
+Group 51 does not exist
+Group 52 does not exist
+Group 53 does not exist
+Group 54 does not exist
+Group 55 does not exist
+Group 56 does not exist
+Group 57 does not exist
+Group 58 does not exist
+Group 59 does not exist
+Group 60 does not exist
+Group 61 does not exist
+Group 62 does not exist
+Group 63 does not exist
+Group 64 does not exist
+Group 65 does not exist
+Group 66 does not exist
+Group 67 does not exist
+Group 68 does not exist
+Group 69 does not exist
+Group 70 does not exist
+Group 71 does not exist
+Group 72 does not exist
+Group 73 does not exist
+Group 74 does not exist
+Group 75 does not exist
+Group 76 does not exist
+Group 77 does not exist
+Group 78 does not exist
+Group 79 does not exist
+Group 80 does not exist
+Group 81 does not exist
+Group 82 does not exist
+Group 83 does not exist
+Group 84 does not exist
+Group 85 does not exist
+Group 86 does not exist
+Group 87 does not exist
+Group 88 does not exist
+Group 89 does not exist
+Group 90 does not exist
+Group 91 does not exist
+Group 92 does not exist
+Group 93 does not exist
+Group 94 does not exist
+Group 95 does not exist
+Group 96 does not exist
+Group 97 does not exist
+Group 98 does not exist
+Group 99 does not exist
+Group 100 does not exist
+
+> 
+Found 510 atoms in range 1-510
+
+> 
+
+> 
+Copied index group 0 'SOLU'
+Complemented group: 18517 atoms
+
+> 
+
+> 
+Select group to position restrain
+Selected 0: 'SOLU'
+End time: 2026-04-07 09:36:04
+
+Running run_gromacs.sh for exampleRNA-OH
+Start time: 2026-04-07 09:36:04
+Setting the LD random seed to -1209664337
+
+Generated 1326 of the 1326 non-bonded parameter combinations
+
+Generated 1326 of the 1326 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'exampleRNA-OH'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'Mg2+'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CL-'
+
+turning H bonds into constraints...
+
+atom name 19007 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19008 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19009 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19010 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19011 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19012 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19013 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19014 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19015 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19016 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19017 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19018 in topol.top and exampleRNA-OH_ions.gro does not match (MG - Mg)
+
+atom name 19019 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19020 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19021 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19022 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19023 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19024 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19025 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+atom name 19026 in topol.top and exampleRNA-OH_ions.gro does not match (CL- - CL)
+
+(more than 20 non-matching atom names)
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+
+The largest distance between excluded atoms is 0.394 nm between atom 192 and 199
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 52x52x52, spacing 0.113 0.113 0.113
+
+Estimate for the relative computational load of the PME mesh part: 0.30
+
+This run will generate roughly 1 Mb of data
+Setting the LD random seed to -73400325
+
+Generated 1326 of the 1326 non-bonded parameter combinations
+
+Generated 1326 of the 1326 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'exampleRNA-OH'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'Mg2+'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CL-'
+
+turning H bonds into constraints...
+
+Setting gen_seed to -2117657
+
+Velocities were taken from a Maxwell distribution at 310 K
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+
+The largest distance between excluded atoms is 0.400 nm between atom 222 and 229
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 310 K
+
+Calculated rlist for 1x1 atom pair-list as 0.943 nm, buffer size 0.043 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.905 nm, buffer size 0.005 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 52x52x52, spacing 0.113 0.113 0.113
+
+Estimate for the relative computational load of the PME mesh part: 0.32
+
+This run will generate roughly 16 Mb of data
+Setting the LD random seed to -1988174098
+
+Generated 1326 of the 1326 non-bonded parameter combinations
+
+Generated 1326 of the 1326 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'exampleRNA-OH'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'Mg2+'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CL-'
+
+turning H bonds into constraints...
+
+Setting gen_seed to 1204612287
+
+Velocities were taken from a Maxwell distribution at 310 K
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+
+The largest distance between excluded atoms is 0.406 nm between atom 391 and 415
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 310 K
+
+Calculated rlist for 1x1 atom pair-list as 1.008 nm, buffer size 0.108 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.939 nm, buffer size 0.039 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 52x52x52, spacing 0.113 0.113 0.113
+
+Estimate for the relative computational load of the PME mesh part: 0.31
+
+This run will generate roughly 147 Mb of data
+End time: 2026-04-07 10:10:15
+
+FAILURE: exampleRNA-OH
