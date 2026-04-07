@@ -17,6 +17,7 @@ This repository contains scripts for preparing RNA structures for molecular simu
 RNA/
 ├── ForceFieldFiles/
 ├── Output/
+│   ├── exampleRNA-OH/
 ├── Scripts/
 │   ├── amber_tools.sh
 │   ├── prepare_files.sh
@@ -26,9 +27,8 @@ RNA/
 ├── Structures/
 │   ├── PDB files used in the manuscript
 ├── example/
-│   ├── README.md
-│   ├── expected_output/
-│   └── PLACE_DEMO_INPUT_FILES_HERE.txt
+│   ├── exampleRNA-OH.pdb
+│   ├── log
 ├── CITATION.cff
 ├── environment.yml
 ├── LICENSE
@@ -83,6 +83,11 @@ The current repository explicitly requires:
 No non-standard hardware is required for structure preparation and file generation.
 
 For production molecular dynamics, multi-core CPUs are recommended and GPU acceleration may substantially reduce runtime, depending on your GROMACS build and local hardware.
+
+### Tested hardware
+- Desktop running Ubuntu 20.04 with an NVIDIA GeForce RTX 4090 GPU and an Intel(R) Xeon(R) w5-3435X processor 
+- Desktop running Ubuntu 20.04 with an NVIDIA GeForce RTX 3080 GPU and an Intel(R) Xeon(R) W-2245 processor 
+
 
 ## Installation
 
@@ -225,7 +230,7 @@ If you use this repository, please cite the associated manuscript and the force-
 See `CITATION.cff`.
 
 ### Force-field reference
-El-Khoury, R, et al. *Formation of left-handed helices by C2′-fluorinated nucleic acids under physiological salt conditions.* Nucleic Acids Research (2024).
-Zgarbova, M. et ak. *Refinement of the Cornell et al. Nucleic Acids Force Field Based on Reference Quantum Chemical Calculations of Glycosidic Torsion Profiles*. J. Chem. Theory Comput., 2011, 7, 2886–2902. 
+- El-Khoury, R, et al. *Formation of left-handed helices by C2′-fluorinated nucleic acids under physiological salt conditions.* Nucleic Acids Research (2024).
+- Zgarbova, M. et ak. *Refinement of the Cornell et al. Nucleic Acids Force Field Based on Reference Quantum Chemical Calculations of Glycosidic Torsion Profiles*. J. Chem. Theory Comput., 2011, 7, 2886–2902. 
 
 

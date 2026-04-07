@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: au555720 (803184543)
 ;	On host: d58245
-;	At date: Tue Apr  7 09:36:31 2026
+;	At date: Tue Apr  7 12:59:19 2026
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2025.2 (-:
@@ -11,21 +11,21 @@
 ;	Data prefix:  /mnt/software/gromacs/2025.2-gcc-avx512
 ;	Working dir:  /home/au555720/RNA/github/RNA/Output/exampleRNA-OH/exampleRNA-OH_solv.amb2gmx
 ;	Command line:
-;	  gmx grompp -f ../../../ForceFieldFiles/mdps/step4.2_equilibration.mdp -r eq1.gro -c eq1.gro -p topol.top -n index.ndx -o eq2.tpr -maxwarn 1
+;	  gmx grompp -f ../../../ForceFieldFiles/mdps/step5_production.mdp -r eq2.gro -c eq2.gro -n index.ndx -p topol.top -o exampleRNA-OH_500ns_4.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
 ; e.g.: -I/home/joe/doe -I/home/mary/roe
 include                  = 
 ; e.g.: -DPOSRES -DFLEXIBLE (note these variable names are case sensitive)
-define                   = -DPOSRES
+define                   = 
 
 ; RUN CONTROL PARAMETERS
 integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 25000000
+nsteps                   = 250000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -137,7 +137,7 @@ implicit-solvent         = no
 ensemble-temperature-setting = auto
 ensemble-temperature     = -1
 ; Temperature coupling  
-tcoupl                   = Nose-Hoover
+tcoupl                   = v-rescale
 nsttcouple               = -1
 nh-chain-length          = 10
 print-nose-hoover-chain-variables = no
@@ -147,13 +147,13 @@ tc_grps                  = SOLU SOLV
 tau_t                    = 1.0 1.0
 ref_t                    = 310 310
 ; pressure coupling     
-pcoupl                   = No
-pcoupltype               = Isotropic
+pcoupl                   = Parrinello-Rahman
+pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau-p                    = 5
-compressibility          = 
-ref-p                    = 
+tau_p                    = 5.0
+compressibility          = 4.5e-5
+ref_p                    = 1.0
 ; Scaling of reference coordinates, No, All or COM
 refcoord-scaling         = No
 
@@ -173,16 +173,16 @@ annealing-time           =
 annealing-temp           = 
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen-vel                  = yes
-gen-temp                 = 310
-gen-seed                 = 1204612287
+gen-vel                  = no
+gen-temp                 = 300
+gen-seed                 = -2117717
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
 ; Type of constraint algorithm
 constraint_algorithm     = LINCS
 ; Do not constrain the start configuration
-continuation             = no
+continuation             = yes
 ; Use successive overrelaxation to reduce the number of shake iterations
 Shake-SOR                = no
 ; Relative tolerance of shake
